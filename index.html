@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>
+      ____Title____
+    </title>
+
+    <meta name="description" content="____Description____">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        document.documentElement.className =
+         document.documentElement.className.replace("no-js","js");
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+    <script type="module">
+  import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+  Chatbot.init({
+    chatflowid: "6536daea-3c71-4f8b-aa0b-df7f7b0268cf",
+    apiHost: "https://flowiseai-railway-production-170d.up.railway.app",
+    theme: {
+      button: {
+        backgroundColor: '#b9381c',
+        autoWindowOpen: {
+            autoOpen: true,           // Nastaviť na true pre automatické otvorenie
+            openDelay: 5,             // Oneskorenie v sekundách pred otvorením 
+            autoOpenOnMobile: false   // Ak chcete, aby sa otváralo automaticky aj na mobiloch
+        }
+      },
+      chatWindow: {
+        showTitle: true,
+        welcomeMessage: 'Welcome to Kurhotel Pyramide! How may I assist you?',
+        title: 'Virtual Receptionist',
+        titleAvatarSrc: 'https://pyramide-sibyllenbad.de/wp-content/uploads/2021/06/Logo.png',
+        userMessage: {
+          backgroundColor: '#b9381c'
+        },
+        textInput: {
+          sendButtonColor: '#b9381c'
+        },
+        footer: {
+          text: 'Multilingual Assistant',
+          company: '',
+          companyLink: ''
+        }
+      }
+    }
+  })
+</script>
+
+    <a href="#main">skip to main content</a>
+
+    <div class="container">
+
+      <main id="main" role="main" class="content">
+
+        <h1>
+          Hello, I'm the best Testing website!<br>
+          Test here your new awesome Chatbot.
+        </h1>
+
+      </main><!-- /.content -->
+
+    </div><!-- /.container -->
+
+    <script src="js/script.js"></script>
+
+  </body>
+
+</html>
